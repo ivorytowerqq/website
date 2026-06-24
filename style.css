@@ -230,6 +230,12 @@ section {
 /* ─── SECTION: HERO ───────────────────────────────── */
 
 #hero {
+  background-color: #EFE7D9;
+  background-image: url('img/hero.png');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right bottom;
+  border-bottom-color: #e0d9cc;
   padding: 120px 0 100px;
 }
 
@@ -245,7 +251,7 @@ section {
 #hero .hero-sub {
   max-width: 48ch;
   margin-bottom: 40px;
-  color: #444;
+  color: #5a5147;
   font-size: 18px;
 }
 
@@ -319,25 +325,40 @@ section {
 .clients-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
+  gap: 24px;
 }
 
 .client-item {
   background: var(--white);
-  padding: 40px 36px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
+  flex-direction: column;
+  border: 1px solid var(--border);
 }
 
-.client-placeholder {
-  font-size: 12px;
+.client-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.client-text {
+  padding: 24px 28px 28px;
+}
+
+.client-name {
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--grey);
+  margin-bottom: 8px;
+}
+
+.client-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--black);
 }
 
 /* ─── SECTION: CTA ────────────────────────────────── */
@@ -366,6 +387,49 @@ section {
   color: #555;
   margin-bottom: 40px;
   font-size: 17px;
+}
+
+/* ─── SECTION: SERVICES (dark) ───────────────────── */
+
+#services {
+  background: #0f0f0f;
+  border-bottom-color: #222;
+}
+
+#services .label {
+  color: #666;
+}
+
+#services .section-intro h2 {
+  color: #fff;
+}
+
+#services .section-intro p {
+  color: #888;
+}
+
+#services .card-grid {
+  background: #222;
+}
+
+#services .card {
+  background: #0f0f0f;
+}
+
+#services .card-num {
+  color: #555;
+}
+
+#services .card h3 {
+  color: #fff;
+}
+
+#services .card .card-trigger {
+  color: #666;
+}
+
+#services .card > p:last-child {
+  color: #888;
 }
 
 /* ─── IDEAS PAGE ──────────────────────────────────── */
